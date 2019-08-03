@@ -1,6 +1,6 @@
-# Notify
+# AWS Amplify Note App
 
-Note application
+Basic Note App where a user can create an account, signin, add and delete personal notes
 
 # Technologies Used
 
@@ -15,5 +15,6 @@ Note application
 - Setup basic AWS-Amplify project using graphQl
 - React hook implementation
 - How to setup and properly use AWS AppSync
+- Handling userAuth using AWS Amplify
 
 # Test App Live
