@@ -1,0 +1,19 @@
+{
+    "javascript": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-notetaker-javascript-20190803095102-authRole",
+            "UnauthRoleArn": "arn:aws:iam::678480926111:role/amplify-notetaker-javascript-20190803095102-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::678480926111:role/amplify-notetaker-javascript-20190803095102-authRole",
+            "Region": "us-east-1",
+            "DeploymentBucketName": "amplify-notetaker-javascript-20190803095102-deployment",
+            "UnauthRoleName": "amplify-notetaker-javascript-20190803095102-unauthRole",
+            "StackName": "amplify-notetaker-javascript-20190803095102",
+            "StackId": "arn:aws:cloudformation:us-east-1:678480926111:stack/amplify-notetaker-javascript-20190803095102/bb638fb0-b5f5-11e9-b773-1262c1c6cf8e"
+        },
+        "categories": {
+            "auth": {
+                "amplifynotetaker04591de4": {}
+            }
+        }
+    }
+}
