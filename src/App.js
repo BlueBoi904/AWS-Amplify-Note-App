@@ -12,6 +12,7 @@ const App = () => {
   const [note, setNote] = useState("");
   const [noteId, setNoteId] = useState("");
   const [noteIndex, setNoteIndex] = useState("");
+  const [deletingId, setDeletingId] = useState("");
 
   useEffect(() => {
     handleListNotes();
@@ -73,6 +74,7 @@ const App = () => {
   };
 
   const handleDelete = async id => {
+    setDeletingId();
     const payload = { id };
     const { data } = await API.graphql(
       graphqlOperation(deleteNote, { input: payload })
@@ -84,6 +86,7 @@ const App = () => {
       ...notes.slice(deletedNoteIndex + 1)
     ];
     setNotes(updatedNotes);
+    setDeletingId("");
   };
 
   const handleSetNote = ({ note, id }, index) => {
@@ -111,7 +114,11 @@ const App = () => {
       <div>
         {notes.map((item, i) => (
           <div key={item.id} className="flex items-center">
-            <li className="list pa1 f3" onClick={() => handleSetNote(item, i)}>
+            <li
+              className="list pa1 f3"
+              onClick={() => handleSetNote(item, i)}
+              style={{ color: deletingId === item.id && "red" }}
+            >
               {item.note}
             </li>
             <button
