@@ -12,7 +12,7 @@ Basic Note App where a user can create an account, signin, add and delete person
 
 # What I've Learned
 
-- Setup basic AWS-Amplify project using graphQl
+- Setup basic AWS-Amplify project
 - React hook implementation
-- How to setup and properly use AWS AppSync
+- How to setup and properly use AWS AppSync and GraphQL schema
 - Handling userAuth using AWS Amplify
